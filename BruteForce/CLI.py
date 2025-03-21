@@ -23,6 +23,7 @@ class Menu():
         def __init__(self):
             self.alert = None
             self.invalid_selection = (Fore.RED + "Invalid Selection" + Style.RESET_ALL).center(50)
+            self.unimplemented_alert = (Fore.RED + "Not Yet Implemented" + Style.RESET_ALL).center(50)
 
         
         def show_menu(self):
@@ -47,8 +48,28 @@ class Menu():
                         instagram.attack()
                     except Exception:
                         pass
+
+                elif choice == "2":
+                    self.alert = self.unimplemented_alert
+                
+                elif choice == "3":
+                    self.alert = self.unimplemented_alert
+
+                elif choice == "4":
+                    self.alert = self.unimplemented_alert
+                
+                elif choice == "5":
+                    self.alert = self.unimplemented_alert
+
+                elif choice == "6":
+                    self.alert = self.unimplemented_alert
+
+                elif choice == "7":
+                    self.alert = self.unimplemented_alert
+
                 elif choice.lower() == "q":
                     sys.exit()
+
                 else:
                     self.alert = self.invalid_selection
         
@@ -63,7 +84,6 @@ class Menu():
         def show_alert(self):
             print(self.alert + "\n\n" if self.alert and self.alert is not None else "\n\n")
         
-                  
             
 
 

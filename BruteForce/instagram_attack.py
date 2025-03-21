@@ -75,7 +75,7 @@ class Instagram():
             self.clear_screen()
             self.header()
             target = input("Target Username: ")
-            password_file = input("Path to password list: ")
+            password_file = input("Path to password list (or name if in root): ")
             if not password_file.endswith(".txt"):
                 password_file = password_file + ".txt"
             
