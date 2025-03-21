@@ -79,7 +79,7 @@ class EpicGames():
         while not confirmed:
             self.clear_screen()
             self.header()
-            target = input("Target Username: ").strip()
+            target = input("Target Email: ").strip()
             password_file = input("Path to password list: ").strip()
             if not password_file.endswith(".txt"):
                 password_file = password_file + ".txt"
